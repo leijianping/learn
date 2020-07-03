@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background: black;
+            text-align: center;    
+        }
+        #c1{
+            background: white;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let oC1 = document.getElementById('c1')
+            let gd = oC1.getContext("2d")
+            gd.rotate(Math.PI/6)
+            gd.strokeRect(100,100,300,200)
+        }
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="800px" height="800px"></canvas>
+</body>
+</html>

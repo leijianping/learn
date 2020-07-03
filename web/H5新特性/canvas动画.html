@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background: black;
+            text-align: center;    
+        }
+        #c1{
+            background: white;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let oC1 = document.getElementById('c1')
+            let gd = oC1.getContext("2d")
+            gd.strokeRect(50,50,100,70)
+            let left = 50
+            setInterval(() =>{
+                gd.clearRect(0,0,oC1.width,oC1.height)
+                left++
+                gd.strokeRect(left,50,100,70)
+            },16)
+        }
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="800px" height="800px"></canvas>
+</body>
+</html>
