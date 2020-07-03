@@ -1,0 +1,15 @@
+canvas 画完后就不能修改,不会保存任何图形信息。
+gd.clearRect() 擦掉的时候把整个画布都擦掉
+修改 交互 事件
+1、svg 
+2、库
+
+canvas 变换
+rotate translate scale 
+使用路径之前先beginPath
+想修改先擦掉再重画
+使用变换之前先save 后restore
+
+图片
+
+图形对象
