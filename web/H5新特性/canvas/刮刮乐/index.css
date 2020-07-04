@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 300px;
+    padding: 20px 0;
+    background-color: red;
+}
+
+.canvasBox{
+    width: 78%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #FFF;
+    margin-left: 10%;
+    line-height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+#canvas{
+    width: 96%;
+    height: 96%;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    background-color: transparent;
+}
